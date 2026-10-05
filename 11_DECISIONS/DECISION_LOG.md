@@ -25,3 +25,34 @@ Status: ACTIVE
 - AI responsibility boundary.
 - Security/authorization model.
 - Production deployment architecture.
+
+
+## D-011 — Ownership Classification
+**Status:** ACCEPTED  
+**Date:** 2026-10-05  
+MDCRL owns decision memory, not operational data. Persistent / External-Referenced / Derived classification is the baseline for the decision model.
+
+## D-012 — Derived → Snapshot → Persistent
+**Status:** ACCEPTED  
+**Date:** 2026-10-05  
+Derived results become Persistent when their exact state is historically relevant to a decision, including Decision Required Because, Integrity at Decision and Decision Context Snapshot.
+
+## D-013 — Dependency Graph Boundary
+**Status:** ACCEPTED  
+**Date:** 2026-10-05  
+Dependency Graph is used only for Traceability, change-impact detection and Integrity support. It is not used for Scheduling, Optimization, Resource Allocation or Option Generation.
+
+## D-014 — Integrity Invariant
+**Status:** ACCEPTED  
+**Date:** 2026-10-05  
+Integrity ≠ Feasibility ≠ Impact ≠ Decision State. These four concepts must remain independent throughout subsequent architecture and implementation.
+
+## D-015 — Integrity Rules v0.1.1
+**Status:** VALIDATED  
+**Date:** 2026-10-05  
+Option and Case Integrity rules were validated, including CURRENT / REVIEW_REQUIRED / DECISION_BLOCKED and the M-204 combined failure test.
+
+## D-016 — Physical Relational Core
+**Status:** APPROVED AS DRAFT  
+**Date:** 2026-10-05  
+The minimal relational core is approved as the starting Physical Data Model. M-204 Physical Data Walkthrough may revise it; the model is not yet production-final.
