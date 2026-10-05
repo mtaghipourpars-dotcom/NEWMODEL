@@ -26,7 +26,6 @@ Status: ACTIVE
 - Security/authorization model.
 - Production deployment architecture.
 
-
 ## D-011 — Ownership Classification
 **Status:** ACCEPTED  
 **Date:** 2026-10-05  
@@ -55,4 +54,14 @@ Option and Case Integrity rules were validated, including CURRENT / REVIEW_REQUI
 ## D-016 — Physical Relational Core
 **Status:** APPROVED AS DRAFT  
 **Date:** 2026-10-05  
-The minimal relational core is approved as the starting Physical Data Model. M-204 Physical Data Walkthrough may revise it; the model is not yet production-final.
+The minimal relational core is approved as the starting Physical Data Model.
+
+## D-017 — Reference DBMS Selection
+**Status:** ACCEPTED  
+**Date:** 2026-10-05  
+PostgreSQL is selected as the Reference Implementation DBMS for the first executable NEWMODEL / MDCRL physical schema. This does not lock future production deployment to PostgreSQL.
+
+## D-018 — PostgreSQL Physical Schema Specification
+**Status:** VALIDATED  
+**Date:** 2026-10-05  
+PostgreSQL Physical Schema Specification v0.1 and M-204 SQL Schema Walkthrough v0.1.2 were validated with 17/17 tests passed. The next implementation stage is executable PostgreSQL DDL.
