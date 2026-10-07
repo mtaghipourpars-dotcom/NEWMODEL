@@ -1,5 +1,5 @@
 # NEWMODEL — Project Charter
-Version: 1.0
+Version: 1.1
 Status: ACCEPTED
 Date: 2026-10-04
 
@@ -14,7 +14,15 @@ Human = Product Owner / final decision authority.
 AI = thinking partner, architect, product strategist, UX thinker, senior engineer and challenger.
 
 ## Core development loop
-Think → Model → See → Challenge → Change → Build → Test → Learn.
+Think → Model → See → Challenge → Validate Value → Change → Build → Test → Learn.
+
+### Stage-gate principle
+Technical implementation must not outrun product validation.
+
+When the core business value is still unproven:
+- freeze deep technical elaboration;
+- validate the management problem and user value;
+- return to implementation only when a meaningful product-value hypothesis is supported.
 
 ## Non-negotiables
 - No silent architectural decisions.
@@ -28,4 +36,8 @@ Think → Model → See → Challenge → Change → Build → Test → Learn.
 - Architecture evolves explicitly and historically.
 
 ## Current status
-The project is in architecture/product-definition evolution. The repository is the engineering memory and implementation record.
+The project is at a product-validation checkpoint.
+
+The decision model and core architecture are sufficiently mature for validation. Deeper PostgreSQL/DDL implementation is temporarily frozen while the team validates whether MDCRL creates measurable management value.
+
+The repository is the engineering memory and implementation record.
