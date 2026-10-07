@@ -82,3 +82,8 @@ The first implementation should prove one meaningful decision journey end-to-end
 - deployment model;
 - offline/local-network requirements;
 - AI boundary.
+
+## Product Validation Gate
+Architecture maturity must not be confused with product maturity. Before deeper implementation, demonstrate that MDCRL materially improves at least one real management decision journey.
+
+PostgreSQL, DDL, triggers, concurrency and transaction mechanics are implementation mechanisms, not product definition.
