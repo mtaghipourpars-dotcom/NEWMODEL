@@ -24,6 +24,9 @@ Problem → Decision Journey → MDCRL Intervention → Decision → Outcome →
 
 Before deep technical implementation, the team should be able to explain what management behavior or outcome the slice improves.
 
+## Product-value acceptance
+A technical test is not sufficient. A meaningful slice must demonstrate a real management problem, current decision journey, MDCRL intervention, decision and measurable or defensible value.
+
 ## Business test
 Ask:
 - Is this decision painful enough to justify intervention?
