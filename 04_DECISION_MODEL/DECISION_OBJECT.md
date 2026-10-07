@@ -1,6 +1,6 @@
 # NEWMODEL — Decision Object
-Version: 0.1
-Status: PROPOSED — REQUIRES USER GATE
+Version: 0.2
+Status: WORKING MODEL — VALIDATION CONTINUES
 
 ## Purpose
 Represent one management decision with enough context to make the decision traceable before, during and after execution.
@@ -76,3 +76,18 @@ For each option:
 
 ## Core rule
 The system must not blur evidence, prediction, option and decision into one undifferentiated value.
+
+## Product-validation rule
+The Decision Object is an architectural means, not the product value itself.
+
+Validation must demonstrate that structuring a decision into context, evidence, constraints, options, feasibility, decision and outcome materially improves a real management decision.
+
+## Historical feasibility basis
+Where an Option is selected, the Decision records the exact Feasibility Result used at decision time.
+
+Three concepts remain distinct:
+- History: immutable FEASIBILITY_RESULT records.
+- Current: OPTION.current_feasibility_result_id.
+- Decision basis: DECISION.selected_feasibility_result_id.
+
+For a NO_ACCEPTABLE_OPTION decision, both selected option and selected feasibility result remain NULL.
