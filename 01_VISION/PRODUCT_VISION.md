@@ -36,6 +36,9 @@ External conditions may create changes; changes may create impacts; impacts may 
 External condition → Change/Event → Impact → Constraint → Risk/Opportunity → Decision.
 
 ## Product value hypothesis
+This remains a hypothesis until demonstrated against a real management decision journey.
+
+
 The product creates value when it reduces decision latency, makes trade-offs visible, exposes infeasibility before commitment, improves resource prioritization, and preserves the reasoning and outcome of decisions.
 
 This remains a hypothesis until demonstrated against a real management decision journey.
