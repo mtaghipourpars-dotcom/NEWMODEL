@@ -39,6 +39,9 @@ NEXT — move to the next agreed step.
 FREEZE — freeze a decision/version.
 CHANGE — intentionally reopen an accepted decision.
 
+## Architecture stop rule
+If technical detail is growing faster than evidence of product value, stop technical deepening and move to Business/Product Validation.
+
 ## Stop conditions
 Stop and surface the issue when:
 - technical elaboration is continuing without a clear product-value question;
