@@ -91,3 +91,10 @@ Three concepts remain distinct:
 - Decision basis: DECISION.selected_feasibility_result_id.
 
 For a NO_ACCEPTABLE_OPTION decision, both selected option and selected feasibility result remain NULL.
+
+
+## Product Validation Rule
+The Decision Object is an architectural means, not the product value itself. Validation must demonstrate that structuring a real decision into context, evidence, constraints, options, feasibility, decision and outcome materially improves management decision-making.
+
+## D-019 / D-020
+History = immutable FEASIBILITY_RESULT. Current = OPTION.current_feasibility_result_id. Decision basis = DECISION.selected_feasibility_result_id. NO_ACCEPTABLE_OPTION leaves both selected fields NULL.
