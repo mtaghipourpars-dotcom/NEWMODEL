@@ -1,6 +1,6 @@
 # NEWMODEL — Product Vision
-Version: 0.1
-Status: PROPOSED — REQUIRES USER GATE
+Version: 0.2
+Status: WORKING VISION — BUSINESS VALIDATION REQUIRED
 
 ## Vision
 Create a management decision layer that helps an enterprise understand competing demands, constraints, commitments and available resources in one traceable context, so managers can make better prioritization and allocation decisions.
@@ -38,6 +38,20 @@ External condition → Change/Event → Impact → Constraint → Risk/Opportuni
 ## Product value hypothesis
 The product creates value when it reduces decision latency, makes trade-offs visible, exposes infeasibility before commitment, improves resource prioritization, and preserves the reasoning and outcome of decisions.
 
+This remains a hypothesis until demonstrated against a real management decision journey.
+
+### Required proof
+The product must demonstrate a meaningful improvement over the existing decision process in at least one high-value scenario.
+
+The proof should compare:
+- decision journey before MDCRL;
+- decision journey with MDCRL;
+- decision latency;
+- information completeness / traceability;
+- visibility of trade-offs and feasibility;
+- management accountability;
+- measurable economic, customer, risk or capacity consequence where evidence is available.
+
 ## Out of scope for initial phase
 - Rebuilding SAP.
 - Rebuilding MRP.
@@ -53,6 +67,14 @@ The product creates value when it reduces decision latency, makes trade-offs vis
 - What decision is currently made manually or inconsistently?
 - What measurable economic consequence follows from a better decision?
 - What is the smallest vertical slice that proves value?
+
+## Product-validation checkpoint
+Before deep implementation, validate:
+1. a painful decision worth improving;
+2. the accountable decision owner;
+3. the existing decision process;
+4. the incremental value created by MDCRL;
+5. the smallest vertical slice that can demonstrate that value.
 
 ## Gate
 This document is a working vision, not yet a frozen product specification.
