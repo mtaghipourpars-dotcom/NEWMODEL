@@ -41,3 +41,6 @@ The project is at a product-validation checkpoint.
 The decision model and core architecture are sufficiently mature for validation. Deeper PostgreSQL/DDL implementation is temporarily frozen while the team validates whether MDCRL creates measurable management value.
 
 The repository is the engineering memory and implementation record.
+
+## D-021 Process Gate
+The project must validate product/business value before deep technical implementation. A technically correct implementation is not evidence that the product should exist.
