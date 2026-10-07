@@ -1,4 +1,4 @@
-# NEWMODEL — PostgreSQL Physical Schema Specification v0.1
+# NEWMODEL — PostgreSQL Physical Schema Specification v0.2
 
 Status: VALIDATED
 Reference DBMS: PostgreSQL
@@ -143,7 +143,51 @@ EVIDENCE and ASSUMPTION business content is immutable. Their materialized integr
 FEASIBILITY_RESULT and IMPACT are versioned/immutable.
 DECISION is immutable and records historical integrity status at decision time.
 
-## 6. Validation Status
-Validated through M-204 SQL Schema Walkthrough v0.1.2 with 17/17 tests passed.
+## 6. D-019 — Feasibility Current Representation
+FEASIBILITY_RESULT is fully immutable.
 
-Next stage: executable PostgreSQL DDL (CREATE TABLE, indexes, constraints, triggers where explicitly required), followed by SQL execution/validation.
+The current result is represented by:
+OPTION.current_feasibility_result_id
+
+The current pointer must reference a result belonging to the same Option through the composite relationship:
+(current_feasibility_result_id, option_id)
+→ FEASIBILITY_RESULT(feasibility_result_id, option_id)
+
+Re-evaluation creates a new immutable FEASIBILITY_RESULT and atomically advances the Option pointer. Concurrent re-evaluation is serialized on the Option row.
+
+The current pointer is materialized derived state; it is not historical truth.
+
+## 7. D-020 — Decision → Historical Feasibility Linkage
+DECISION contains:
+selected_feasibility_result_id UUID NULL
+
+For a normal Option Decision:
+(selected_feasibility_result_id, selected_option_id)
+→ FEASIBILITY_RESULT(feasibility_result_id, option_id)
+
+Nullability consistency:
+- selected_option_id NULL → selected_feasibility_result_id NULL.
+- selected_option_id NOT NULL → selected_feasibility_result_id NOT NULL.
+
+This preserves the exact historical Feasibility Result used at decision time even if the Option's current pointer later changes.
+
+For NO_ACCEPTABLE_OPTION, both fields are NULL.
+
+## 8. Implementation Status
+PostgreSQL remains the Reference Implementation DBMS (D-017).
+
+The current technical baseline is sufficient for Product/Business Validation. Further DDL implementation is temporarily frozen except for resolving validated architectural gaps.
+
+DDL v0.1.1 is superseded for implementation purposes by the intended DDL v0.1.2 design.
+
+DDL v0.1.2 is not yet validated.
+
+Required technical walkthrough before implementation validation:
+1. Normal re-evaluation.
+2. Failed re-evaluation.
+3. Concurrent re-evaluation.
+4. Pointer integrity.
+5. Decision → historical feasibility linkage.
+6. Rollback behavior.
+
+The six-test walkthrough must pass before DDL v0.1.2 is marked VALIDATED.
