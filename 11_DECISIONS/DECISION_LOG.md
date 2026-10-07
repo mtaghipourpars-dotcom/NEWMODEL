@@ -17,6 +17,21 @@ Status: ACTIVE
 | D-009 | A decision shell/layer over existing systems is the current product architecture direction. | ACCEPTED AS DIRECTION | 2026-10-04 | Product architecture discussion |
 | D-010 | Dynamic prioritization/allocation under current and future resource constraints is a central problem candidate. | ACCEPTED AS HYPOTHESIS | 2026-10-04 | Product problem discussion |
 
+## D-019 — Feasibility Current Representation
+**Status:** ACCEPTED  
+**Date:** 2026-10-07  
+FEASIBILITY_RESULT is fully immutable. Current feasibility is represented by OPTION.current_feasibility_result_id. Re-evaluation creates a new immutable result and advances the current pointer transactionally. D-019 supersedes the earlier implementation direction using FEASIBILITY_RESULT.is_current.
+
+## D-020 — Decision → Historical Feasibility Linkage
+**Status:** ACCEPTED  
+**Date:** 2026-10-07  
+DECISION records selected_feasibility_result_id as the exact historical Feasibility Result used at decision time. The linkage is enforced conceptually through the selected option/result relationship. Current feasibility may change after the decision without changing its historical basis.
+
+## D-021 — Product Validation Checkpoint
+**Status:** ACCEPTED AS PROCESS DECISION  
+**Date:** 2026-10-07  
+Deep technical implementation is temporarily frozen. The next project priority is validation of MDCRL business/product value through real management decision journeys. Technical completeness is not treated as evidence of product value.
+
 ## Unresolved decisions
 - Final product vision.
 - MVP decision scenario.
