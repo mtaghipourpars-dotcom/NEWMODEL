@@ -23,3 +23,8 @@ Create a shared engineering record so product evolution, architecture, decisions
 
 ### Important status
 Product Vision, Architecture Principles, Decision Object and Core Business Rules are proposals until explicitly accepted.
+
+
+## 2026-10-07
+### Product Validation Checkpoint
+Technical deepening was intentionally paused after the decision-model and core architecture reached sufficient maturity. D-019 and D-020 were accepted, and D-021 established Business/Product Validation as the next priority. The purpose is to prove that MDCRL materially improves a real management decision before further PostgreSQL/DDL elaboration.
