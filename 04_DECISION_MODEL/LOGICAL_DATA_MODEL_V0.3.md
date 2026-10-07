@@ -30,3 +30,6 @@ A derived result becomes persistent when its exact state is historically relevan
 6. Execution systems are the source of actual outcomes; MDCRL persists decision-relevant outcomes.
 7. Technical representation of Current Feasibility must not alter historical Feasibility Results.
 8. A Decision must preserve the exact historical Feasibility Result used when an Option is selected.
+
+## D-019 / D-020 Extension
+Current Feasibility is represented by OPTION.current_feasibility_result_id while FEASIBILITY_RESULT remains immutable history. DECISION.selected_feasibility_result_id snapshots the exact historical feasibility result used at decision time.
