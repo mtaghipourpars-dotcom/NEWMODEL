@@ -191,3 +191,6 @@ Required technical walkthrough before implementation validation:
 6. Rollback behavior.
 
 The six-test walkthrough must pass before DDL v0.1.2 is marked VALIDATED.
+
+## Implementation Status — Product Validation Gate
+D-019 and D-020 are accepted. DDL v0.1.2 is ready for walkthrough but is not validated. Deep technical implementation is paused while product value is validated.
