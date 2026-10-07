@@ -50,6 +50,9 @@ Confidence must derive from evidence quality, freshness, completeness and explic
 ## 9. Evolution
 Architecture versions must preserve history and reasons for change.
 
+## 11. Business value before technical depth
+Architecture maturity must not be confused with product maturity. Validate a real decision journey before deep technical implementation.
+
 ## 10. Integration resilience
 The product should minimize dependency on a single enterprise vendor or implementation detail.
 
