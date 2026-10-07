@@ -76,3 +76,6 @@ Nothing listed as unresolved may be treated as an accepted requirement without a
 
 ## Current next step
 Product / Business Validation of MDCRL before further technical deepening.
+
+## D-021 — Product Validation Checkpoint
+Technical deepening is temporarily frozen. Product/business validation is the next priority.
